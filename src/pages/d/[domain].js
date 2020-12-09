@@ -3,6 +3,7 @@ import { Component } from "react";
 import AboutOrg from "../../components/AboutOrg";
 import Donations from "../../components/Donations";
 import Footer from "../../components/Footer";
+import PressCoverage from "../../components/PressCoverage";
 import Hero from "../../components/OrgHero";
 import Nav from "../../components/Nav";
 import PersonalInfoForm from "../../components/PersonalInfoForm";
@@ -63,6 +64,7 @@ class Org extends Component {
         <PersonalInfoForm
           selectedCompany={organization}
         />
+        <PressCoverage />
         {organization && (
           <AboutOrg 
             selectedCompany={organization}
