@@ -1,3 +1,4 @@
+import { Title } from "./text";
 import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 import styles from "./styles";
@@ -22,6 +23,9 @@ const items = [
 const PressCoverage = ({ classes }) => {
   return (
     <div className={classes.container}>
+      <Typography color="inherit" className={classes.intro}>
+        {Title}
+      </Typography>
       <div className={classes.inner}>
         <GridList className={classes.gridList} cols={items.length} cellHeight={50} spacing={20}>
           {items.map((item) => (
@@ -31,7 +35,7 @@ const PressCoverage = ({ classes }) => {
               href={item.url}
               key={item.url}
             >
-              <img src={item.image} alt={item.name} />
+              <img className={classes.pressLogo} src={item.image} alt={item.name} />
             </GridListTile>
           ))}
         </GridList>

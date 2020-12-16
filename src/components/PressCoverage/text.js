@@ -1,16 +1,8 @@
 import { FormattedMessage } from "react-intl";
 
-export const SubtitleText = (
-  <FormattedMessage id="headingDonate" defaultMessage="We need your support" />
-);
-
-export const IntroText = (
+export const Title = (
   <FormattedMessage
-    id="donateIntro"
-    defaultMessage="YourDigitalRights.org was created because we believe that privacy matters, and that exercising your right to privacy should be easy. That’s why we’ve made it free. Donations allow us to spend more time improving this service."
+    id="pressIntro"
+    defaultMessage="What the Press say"
   />
-);
-
-export const DonateButtonText = (
-  <FormattedMessage id="Bitcoin" defaultMessage="Donate Bitcoin" />
 );
